@@ -1,0 +1,1 @@
+import{r as t,a,i,b as o,c}from"./animations-Cbw0OaBy.js";t("news");a();i();o();c();document.querySelectorAll(".filter-btn").forEach(e=>{e.addEventListener("click",()=>{document.querySelectorAll(".filter-btn").forEach(r=>r.classList.remove("active")),e.classList.add("active")})});

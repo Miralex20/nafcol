@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nigerian Air Force College of Logistics — World-class professional training in logistics, supply management, works & services, catering and specialized logistics. Enugu, Nigeria." />
+  <title>NAFCOL — Nigerian Air Force College of Logistics</title>
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/nav.css" />
+  <link rel="stylesheet" href="/src/styles/footer.css" />
+  <link rel="stylesheet" href="/src/pages/home/home.css" />
+  <link rel="icon" type="image/png" href="/assets/nafcol_logo.png" />
+</head>
+<body>
+
+  <!-- Shared nav injected here by nav.js -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- ── HERO ───────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <div class="hero__eyebrow-line" aria-hidden="true"></div>
+          <span>Enugu, Nigeria &nbsp;·&nbsp; Est. 1964</span>
+        </div>
+
+        <h1 class="hero__heading" id="hero-heading">
+          World-Class<br>
+          <em>Logistics</em><br>
+          Education &amp;<br>
+          <span class="gold">Training</span>
+        </h1>
+
+        <p class="hero__desc">
+          The Nigerian Air Force College of Logistics is a premier professional training,
+          learning and experience centre — building the capacity of logistics practitioners
+          and serving as a synergy hub for collaboration and innovation across Nigeria and
+          West Africa.
+        </p>
+
+        <div class="hero__btns">
+          <a href="/src/pages/schools/index.html" class="btn btn--navy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+            Explore Schools
+          </a>
+          <a href="/src/pages/about/index.html" class="btn btn--outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/>
+            </svg>
+            Our Mission
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Crossfade slideshow of real campus photos -->
+      <div class="hero__right" aria-hidden="true">
+        <div class="hero__image-wrapper">
+          <div class="hero__right-bg"></div>
+
+          <!-- Slide 1 — wide HQ building shot -->
+          <div class="hero__slide active" id="slide-0">
+            <img
+              src="/assets/nafcol_hq.png"
+              alt="HQ NAFCOL Building, Enugu — wide view"
+            />
+            <div class="hero__slide-overlay"></div>
+          </div>
+
+          <!-- Slide 2 — close-up signboard with flags -->
+          <div class="hero__slide" id="slide-1">
+            <img
+              src="/assets/nafcol_board.png"
+              alt="NAFCOL Headquarters signboard with Nigerian and Air Force flags"
+              style="object-position: center 35%;"
+            />
+            <div class="hero__slide-overlay"></div>
+          </div>
+
+          <!-- Slide indicator dots -->
+          <div class="hero__dots" role="tablist" aria-label="Slideshow navigation">
+            <button class="hero__dot active" data-slide="0" aria-label="Slide 1" aria-selected="true"></button>
+            <button class="hero__dot"        data-slide="1" aria-label="Slide 2" aria-selected="false"></button>
+          </div>
+        </div>
+        
+        <div class="hero__stats" aria-label="Key statistics">
+          <div>
+            <div class="hero__stat-val" data-count="4" data-suffix="+">4+</div>
+            <div class="hero__stat-lbl">Schools</div>
+          </div>
+          <div>
+            <div class="hero__stat-val" data-count="60" data-suffix="+">60+</div>
+            <div class="hero__stat-lbl">Years of Excellence</div>
+          </div>
+          <div>
+            <div class="hero__stat-val" data-count="10" data-suffix="k+">10k+</div>
+            <div class="hero__stat-lbl">Graduates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Stats under hero -->
+    <section class="hero-bottom-stats container">
+        <div class="float-card">
+          <div class="float-card__label">Status</div>
+          <div class="float-card__value"><span class="live-dot"></span>Admissions Open</div>
+          <div class="float-card__sub">2026 / 2027 Session</div>
+        </div>
+        <div class="float-card">
+          <div class="float-card__label">Programmes</div>
+          <div class="float-card__value">12 Courses</div>
+          <div class="float-card__sub">Across 4 Schools</div>
+        </div>
+        <div class="float-card">
+          <div class="float-card__label">Accreditation</div>
+          <div class="float-card__value">NAF &nbsp;✦&nbsp; FME</div>
+          <div class="float-card__sub">Nationally Recognised</div>
+        </div>
+    </section>
+
+    <!-- ── MARQUEE ─────────────────────────────────────────── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">Logistics Management</span>
+        <span class="marquee-item">Supply Chain Excellence</span>
+        <span class="marquee-item">Works &amp; Services</span>
+        <span class="marquee-item">Catering Operations</span>
+        <span class="marquee-item">Specialized Training</span>
+        <span class="marquee-item">Professional Certification</span>
+        <span class="marquee-item">Nigerian Air Force</span>
+        <span class="marquee-item">Enugu, Nigeria</span>
+        <span class="marquee-item">Defence Logistics</span>
+        <span class="marquee-item">Innovation Hub</span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee-item">Logistics Management</span>
+        <span class="marquee-item">Supply Chain Excellence</span>
+        <span class="marquee-item">Works &amp; Services</span>
+        <span class="marquee-item">Catering Operations</span>
+        <span class="marquee-item">Specialized Training</span>
+        <span class="marquee-item">Professional Certification</span>
+        <span class="marquee-item">Nigerian Air Force</span>
+        <span class="marquee-item">Enugu, Nigeria</span>
+        <span class="marquee-item">Defence Logistics</span>
+        <span class="marquee-item">Innovation Hub</span>
+      </div>
+    </div>
+
+    <!-- ── SCHOOLS ─────────────────────────────────────────── -->
+    <section class="section section-border-top" id="schools" aria-labelledby="schools-heading">
+      <div class="container">
+        <div style="text-align:center;max-width:600px;margin:0 auto 3.5rem">
+
+          <h2 class="section-title" id="schools-heading">Four Schools of <em>Excellence</em></h2>
+          <div class="divider divider--center"></div>
+          <p class="section-intro">
+            NAFCOL is organised into four specialised schools, each delivering world-class
+            professional training tailored to modern logistics operations.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-nav hide-desktop" aria-hidden="true">
+            <button class="carousel-btn prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+            <button class="carousel-btn next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+          <div class="schools__grid mobile-carousel">
+
+          <article class="school-card reveal" aria-label="SLSM">
+            <div class="school-card__icon" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+            </div>
+            <div class="school-card__abbr">SLSM</div>
+            <h3 class="school-card__name">School of Logistics &amp; Supply Management</h3>
+            <p class="school-card__desc">Procurement, inventory control, distribution networks, and integrated supply chain strategy for defence and civilian practitioners.</p>
+            <div class="school-card__footer">
+              <span class="school-card__more" aria-hidden="true">View Details</span>
+              <a href="/src/pages/schools/index.html#slsm" class="school-card__plus" aria-label="View SLSM details">+</a>
+            </div>
+          </article>
+
+          <article class="school-card reveal reveal-delay-1" aria-label="SWS">
+            <div class="school-card__icon" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+            </div>
+            <div class="school-card__abbr">SWS</div>
+            <h3 class="school-card__name">School of Works &amp; Services</h3>
+            <p class="school-card__desc">Engineering, infrastructure maintenance, construction management, and facilities services supporting Air Force operational readiness.</p>
+            <div class="school-card__footer">
+              <span class="school-card__more" aria-hidden="true">View Details</span>
+              <a href="/src/pages/schools/index.html#sws" class="school-card__plus" aria-label="View SWS details">+</a>
+            </div>
+          </article>
+
+          <article class="school-card reveal reveal-delay-2" aria-label="SCS">
+            <div class="school-card__icon" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+            </div>
+            <div class="school-card__abbr">SCS</div>
+            <h3 class="school-card__name">School of Catering Services</h3>
+            <p class="school-card__desc">Professional culinary training, food science, nutrition management, and mass catering operations for military and institutional environments.</p>
+            <div class="school-card__footer">
+              <span class="school-card__more" aria-hidden="true">View Details</span>
+              <a href="/src/pages/schools/index.html#scs" class="school-card__plus" aria-label="View SCS details">+</a>
+            </div>
+          </article>
+
+          <article class="school-card reveal reveal-delay-3" aria-label="SSLT">
+            <div class="school-card__icon" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+            </div>
+            <div class="school-card__abbr">SSLT</div>
+            <h3 class="school-card__name">School of Specialized Logistics Training</h3>
+            <p class="school-card__desc">Advanced courses covering airfield operations, petroleum supply, transport management, and logistics IT for specialist practitioners.</p>
+            <div class="school-card__footer">
+              <span class="school-card__more" aria-hidden="true">View Details</span>
+              <a href="/src/pages/schools/index.html#sslt" class="school-card__plus" aria-label="View SSLT details">+</a>
+            </div>
+          </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VISION / MISSION ────────────────────────────────── -->
+    <div class="vm-strip" id="mission">
+      <div class="container">
+        <div class="vm-strip__grid">
+          <div style="padding:0 1rem">
+            <div class="vm-strip__label">Our Vision</div>
+            <p class="vm-strip__text">To become a <em>world-class professional training, learning and experience centre</em> in logistics specializations.</p>
+          </div>
+          <div class="vm-strip__sep" aria-hidden="true"></div>
+          <div style="padding:0 1rem">
+            <div class="vm-strip__label">Our Mission</div>
+            <p class="vm-strip__text">To <em>deliberately build the capacity</em> of logistics practitioners and serve as a synergy hub for collaboration and innovation in logistics management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── COMMANDANT'S MESSAGE ────────────────────────────── -->
+    <section class="section section-border-bottom" id="commandant" aria-labelledby="cmd-heading">
+      <div class="container">
+        <div class="cmd__grid">
+          <div class="cmd__img-wrap">
+            <div class="cmd__img-bg" aria-hidden="true"></div>
+            <div class="cmd__img-frame">
+              <img
+                src="/assets/nafcol_avm.png"
+                alt="Air Vice Marshal FCS Uwakara, Commandant NAFCOL"
+                class="cmd__img-real"
+              />
+            </div>
+          </div>
+          <div class="cmd__content reveal">
+
+            <h2 class="section-title" id="cmd-heading">A Message from <em>Our Commandant</em></h2>
+            <div class="divider"></div>
+            <div class="cmd__qmark" aria-hidden="true">&ldquo;</div>
+            <p class="cmd__msg">Welcome to the Nigerian Air Force College of Logistics. Our institution stands as a beacon of professional excellence, committed to delivering training that meets global standards while addressing the unique operational demands of Nigeria's defence and logistics sector.</p>
+            <p class="cmd__msg">At NAFCOL, we are dedicated to nurturing the next generation of logistics professionals — men and women equipped with the knowledge, skills, and integrity to serve Nigeria with distinction.</p>
+            <div class="cmd__attr">
+              <div class="cmd__attr-line" aria-hidden="true"></div>
+              <div>
+                <div class="cmd__attr-name">Air Vice Marshal FCS Uwakara</div>
+                <div class="cmd__attr-title">DSS fdc(+) psc MSC MNIM FCAI MSPSP &nbsp;·&nbsp; Commandant, NAFCOL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CORE VALUES (DARK) ──────────────────────────────── -->
+    <section class="section section--dark editorial" aria-labelledby="values-heading">
+      <div class="editorial__blob editorial__blob--1" aria-hidden="true"></div>
+      <div class="editorial__blob editorial__blob--2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="editorial__grid">
+          <div>
+
+            <h2 class="section-title section-title--white" id="values-heading">
+              Built on <em>Service,<br>Support &amp; Sustainability</em>
+            </h2>
+            <div class="divider divider--white" style="margin-bottom:2rem"></div>
+            <div class="editorial__quotes" role="list">
+              <div class="editorial__quote-item" role="listitem">
+                <p class="editorial__quote-text">"Logistics is the lifeblood of every successful military and civilian operation. We train professionals who understand this truth deeply."</p>
+                <div class="editorial__quote-src">Service &nbsp;·&nbsp; Core Value I</div>
+              </div>
+              <div class="editorial__quote-item" role="listitem">
+                <p class="editorial__quote-text">"Supporting operational readiness through expert training, research, and practical skills development across every discipline of logistics."</p>
+                <div class="editorial__quote-src">Support &nbsp;·&nbsp; Core Value II</div>
+              </div>
+              <div class="editorial__quote-item" role="listitem">
+                <p class="editorial__quote-text">"Building sustainable capacities that outlast programmes — creating practitioners who continuously innovate and lead in their fields."</p>
+                <div class="editorial__quote-src">Sustainability &nbsp;·&nbsp; Core Value III</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="editorial__right">
+            <div class="editorial__stats" aria-label="Institution statistics">
+              <div class="editorial__stat"><div class="editorial__stat-num">4</div><div class="editorial__stat-lbl">Schools</div></div>
+              <div class="editorial__stat"><div class="editorial__stat-num">60+</div><div class="editorial__stat-lbl">Years</div></div>
+              <div class="editorial__stat"><div class="editorial__stat-num">12+</div><div class="editorial__stat-lbl">Courses</div></div>
+              <div class="editorial__stat"><div class="editorial__stat-num">10k+</div><div class="editorial__stat-lbl">Alumni</div></div>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon" aria-hidden="true">
+                <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+              </div>
+              <div class="glass-card__title">Academic Excellence</div>
+              <p class="glass-card__text">Nationally accredited programmes aligned with Federal Ministry of Education standards and international logistics benchmarks.</p>
+            </div>
+            <div class="glass-card reveal">
+              <div class="glass-card__icon" aria-hidden="true">
+                <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 24px; height: 24px; object-fit: contain;">
+              </div>
+              <div class="glass-card__title">Expert Faculty</div>
+              <p class="glass-card__text">Seasoned military officers and civilian experts with decades of real-world logistics and supply chain experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NEWS PREVIEW ────────────────────────────────────── -->
+    <section class="section section--alt section-border-top" id="news-preview" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="news-preview__header">
+          <div>
+
+            <h2 class="section-title" id="news-heading">Latest from <em>NAFCOL</em></h2>
+          </div>
+          <a href="/src/pages/news/index.html" class="btn btn--outline">View All News</a>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="carousel-nav hide-desktop" aria-hidden="true">
+            <button class="carousel-btn prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+            <button class="carousel-btn next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </div>
+          <div class="news-preview__grid mobile-carousel">
+          <article class="news-card reveal" aria-label="Featured news">
+            <div class="news-card__img" style="background:linear-gradient(135deg,#1A3A5C,#1E4976)" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 64px; height: 64px; object-fit: contain;">
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__cat">Featured &nbsp;·&nbsp; Admissions</div>
+              <h3 class="news-card__title">NAFCOL Opens Applications for the 2026/2027 Academic Session Across All Four Schools</h3>
+              <p class="news-card__excerpt">The College has officially opened its admissions portal for prospective students seeking enrolment for the upcoming academic year. Online applications are now live.</p>
+              <div class="news-card__meta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <time datetime="2026-09-01">September 1, 2026</time> &nbsp;·&nbsp; Admissions Office
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal-delay-1">
+            <div class="news-card__img" style="background:linear-gradient(135deg,#1E4976,#0D2035)" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 64px; height: 64px; object-fit: contain;">
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__cat">Ceremony</div>
+              <h3 class="news-card__title">Graduation Ceremony Holds for 42nd Regular Course</h3>
+              <p class="news-card__excerpt">Hundreds of graduates were commissioned in a colourful ceremony presided over by the Commandant.</p>
+              <div class="news-card__meta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <time datetime="2026-08-20">August 20, 2026</time>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal-delay-2">
+            <div class="news-card__img" style="background:linear-gradient(135deg,#0D2035,#1A3A5C)" aria-hidden="true">
+              <img src="/assets/nafcol_logo.png" alt="NAFCOL Logo" style="width: 64px; height: 64px; object-fit: contain;">
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__cat">Workshop</div>
+              <h3 class="news-card__title">International Logistics Symposium Comes to NAFCOL</h3>
+              <p class="news-card__excerpt">Defence logistics experts from across West Africa gather for a two-day symposium on supply chain innovation.</p>
+              <div class="news-card__meta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <time datetime="2026-07-14">July 14, 2026</time>
+              </div>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ── CTA BANNER ──────────────────────────────────────── -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="cta-banner__glow" aria-hidden="true"></div>
+      <div class="container">
+
+        <h2 class="cta-banner__title" id="cta-heading">Ready to Train with <em>Nigeria's Best</em>?</h2>
+        <p class="cta-banner__sub">Join thousands of logistics professionals who have built their careers at the Nigerian Air Force College of Logistics, Enugu.</p>
+        <div class="cta-banner__btns">
+          <a href="/src/pages/about/index.html#admissions" class="btn btn--white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Apply for Admission
+          </a>
+          <a href="/src/pages/contact/index.html" class="btn btn--outline-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16.92z"/></svg>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared footer injected here by footer.js -->
+  <footer id="site-footer"></footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script type="module" src="/src/pages/home/home.js"></script>
+  <script type="module">
+    import { initCarousels } from '/src/components/carousel.js';
+    document.addEventListener('DOMContentLoaded', initCarousels);
+  </script>
+</body>
+</html>

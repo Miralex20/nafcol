@@ -1,0 +1,59 @@
+/* ─────────────────────────────────────────────────────────────
+   NAFCOL Design Tokens
+   All shared values live here — import into every stylesheet.
+───────────────────────────────────────────────────────────── */
+:root {
+  /* Colour palette — drawn from NAF logo (navy + gold) */
+  --navy:        #1A3A5C;
+  --navy-dark:   #0D2035;
+  --navy-mid:    #1E4976;
+  --navy-light:  #2A5580;
+  --gold:        #B8860B;
+  --gold-light:  #D4A017;
+  --gold-pale:   rgba(184, 134, 11, 0.12);
+  --white:       #FFFFFF;
+  --off-white:   #EBEFF3; /* Darkened from #F7F9FB for reduced eyestrain */
+  --cream:       #E1E6EB;
+  --border:      #C8D8E8;
+  --border-dark: #A8BDD0;
+  --text:        #2C3E50;
+  --text-muted:  #5A7A9A;
+  --text-light:  #8AA5BF;
+  --green:       #2ECC71;
+
+  /* Typography */
+  --serif: 'Merriweather', 'Georgia', serif;
+  --sans:  'Roboto', 'Inter', system-ui, sans-serif;
+
+  /* Spacing scale */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+
+  /* Section vertical padding */
+  --section-py: 5.5rem;
+
+  /* Border radii */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-full: 100px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 8px rgba(26, 58, 92, 0.07);
+  --shadow-md:  0 8px 28px rgba(26, 58, 92, 0.10);
+  --shadow-lg:  0 20px 52px rgba(26, 58, 92, 0.13);
+  --shadow-xl:  0 32px 80px rgba(26, 58, 92, 0.17);
+
+  /* Transitions */
+  --ease: 0.3s ease;
+  --ease-fast: 0.18s ease;
+}

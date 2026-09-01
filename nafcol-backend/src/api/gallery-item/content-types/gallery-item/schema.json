@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_items",
+  "info": {
+    "singularName": "gallery-item",
+    "pluralName": "gallery-items",
+    "displayName": "Gallery Item",
+    "description": "Photos and videos for the gallery"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Campus",
+        "Events",
+        "Graduation",
+        "Facilities"
+      ],
+      "default": "Campus"
+    }
+  }
+}
