@@ -88,6 +88,13 @@ export function renderNav (activePage = 'home') {
         </ul>
 
         <div class="nav__actions">
+          <!-- Search Icon Button -->
+          <button class="nav__icon-btn" id="searchToggle" aria-label="Open search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
           <a href="/src/pages/about/index.html#admissions" class="btn btn--navy">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -102,6 +109,21 @@ export function renderNav (activePage = 'home') {
 
       </div>
     </nav>
+    
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Site Search">
+      <div class="search-modal__backdrop" id="searchBackdrop"></div>
+      <div class="search-modal__content">
+        <button class="search-modal__close" id="searchClose" aria-label="Close search">✕</button>
+        <form class="search-modal__form" id="searchForm" action="/src/pages/news/index.html" method="GET">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" name="q" placeholder="Search news & events..." aria-label="Search query" required autofocus autocomplete="off" />
+          <button type="submit" class="btn btn--navy">Search</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Mobile overlay -->
     <div class="mob-nav" id="mobNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
@@ -159,5 +181,26 @@ export function renderNav (activePage = 'home') {
     mobNav.classList.remove('open')
     hamburger.setAttribute('aria-expanded', 'false')
     document.body.style.overflow = ''
+  }
+
+  // Behaviour — search modal
+  const searchToggle = document.getElementById('searchToggle')
+  const searchModal  = document.getElementById('searchModal')
+  const searchClose  = document.getElementById('searchClose')
+  const searchBackdrop = document.getElementById('searchBackdrop')
+
+  if (searchToggle && searchModal && searchClose) {
+    searchToggle.addEventListener('click', () => {
+      searchModal.classList.add('open')
+      const input = searchModal.querySelector('input')
+      if (input) setTimeout(() => input.focus(), 100)
+    })
+    
+    const closeSearch = () => searchModal.classList.remove('open')
+    searchClose.addEventListener('click', closeSearch)
+    searchBackdrop.addEventListener('click', closeSearch)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && searchModal.classList.contains('open')) closeSearch()
+    })
   }
 }
