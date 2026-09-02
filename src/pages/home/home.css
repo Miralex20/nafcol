@@ -519,7 +519,7 @@
   /* News Preview (Latest News) */
   #news-preview { background: var(--navy); padding: 3rem 1.5rem; }
   .news-preview__header h2 { color: var(--white); font-size: 1.8rem; }
-  .news-preview__header h2 em { font-style: normal; }
+  .news-preview__header h2 em { font-style: normal; color: var(--gold); }
   .news-preview__header .btn { display: none; }
   .news-preview__grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .news-card { background: transparent; border: none; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1.5rem; box-shadow: none; }
