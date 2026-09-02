@@ -127,24 +127,41 @@ export function renderNav (activePage = 'home') {
 
     <!-- Mobile overlay -->
     <div class="mob-nav" id="mobNav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-      <button class="mob-nav__close" id="mobClose" aria-label="Close menu">✕</button>
-      ${NAV_LINKS.map(l => {
-        if (l.children) {
-          const childLinks = l.children.map(c => `<a href="${c.href}" class="mob-nav__child">- ${c.label}</a>`).join('');
-          return `
-            <details class="mob-nav__details">
-              <summary class="mob-nav__summary">${l.label} <span aria-hidden="true">▾</span></summary>
-              <div class="mob-nav__dropdown">
-                ${childLinks}
-              </div>
-            </details>
-          `;
-        }
-        return `<a href="${l.href}">${l.label}</a>`;
-      }).join('')}
-      <a href="/src/pages/about/index.html#admissions" class="btn btn--gold" style="margin-top:.8rem">
-        Apply Now
-      </a>
+      
+      <div class="mob-nav__header">
+        <a href="/" class="nav__logo" aria-label="NAFCOL — Home">
+          <div class="nav__logo-badge" aria-hidden="true">${CREST_SVG}</div>
+          <div>
+            <span class="nav__logo-name">NAFCOL</span>
+          </div>
+        </a>
+        <button class="mob-nav__close" id="mobClose" aria-label="Close menu">✕</button>
+      </div>
+      
+      <div class="mob-nav__body">
+        ${NAV_LINKS.map(l => {
+          if (l.children) {
+            const childLinks = l.children.map(c => `<a href="${c.href}" class="mob-nav__child">${c.label}</a>`).join('');
+            return `
+              <details class="mob-nav__details">
+                <summary class="mob-nav__summary">
+                  <span>${l.label}</span> 
+                  <span class="mob-nav__toggle-icon" aria-hidden="true"></span>
+                </summary>
+                <div class="mob-nav__dropdown">
+                  ${childLinks}
+                </div>
+              </details>
+            `;
+          }
+          return `<a href="${l.href}" class="mob-nav__link">${l.label}</a>`;
+        }).join('')}
+        <div style="padding: 1.5rem;">
+          <a href="/src/pages/about/index.html#admissions" class="btn btn--navy" style="width: 100%; text-align: center;">
+            Apply Now
+          </a>
+        </div>
+      </div>
     </div>`
 
   // Mount into <header id="site-header">
