@@ -33,7 +33,7 @@
 }
 .hero__slide-overlay {
   position: absolute; inset: 0;
-  background: rgba(13, 32, 53, 0.65); /* Dark overlay for readability */
+  background: rgba(8, 20, 35, 0.75); /* Darker overlay for better legibility */
 }
 
 /* Dots */
@@ -63,6 +63,7 @@
   font-size: clamp(3rem, 5vw, 4.5rem);
   font-weight: 800; color: var(--white);
   line-height: 1.1; margin-bottom: 1.2rem;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.8);
 }
 .hero__heading em, .hero__heading .gold { color: var(--white); font-style: normal; }
 
@@ -70,6 +71,7 @@
   font-size: 1.2rem; color: rgba(255, 255, 255, 0.95);
   line-height: 1.6; max-width: 700px; margin-bottom: 2.5rem;
   font-weight: 400;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
 .hero__btns { display: flex; justify-content: center; width: 100%; }
